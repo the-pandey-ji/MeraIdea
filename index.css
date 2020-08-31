@@ -23,35 +23,7 @@ body {
     color: white;
 }
 
-/* Parallax */
-.bgimg-1 {
-    background-image: url("img/car_sports_car_neon_157154_1920x1080.jpg");
-    min-height: 100vh;
 
-    position: relative;
-    opacity: 0.65;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.caption {
-    opacity: 1;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-  }
-  
-  .caption span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
-  }
   
 
 /* Increase the font size of the heading */
@@ -64,6 +36,7 @@ body {
     overflow: hidden;
     background-color: #333;
     position: sticky;
+    z-index: 99;
     position: -webkit-sticky;
     top: 0;
 }
@@ -97,7 +70,35 @@ body {
     color: white;
 }
 
-/* Column container */
+/* Parallax */
+.bgimg-1 {
+    background-image: url("img/car_sports_car_neon_157154_1920x1080.jpg");
+    min-height: 100vh;
+
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caption {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
 
 
 /* Footer */
