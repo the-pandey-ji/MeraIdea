@@ -10,12 +10,14 @@ body {
 
 /* Header/logo Title */
 .header1 {
+    height: 30vh;
+    /* width: 40%; */
     padding: 80px;
     text-align: center;
-    background-image: url(img/);
+    background-image: url(img/laptop_keyboard_glow_170138_1280x720.jpg);
     background-color: aqua;
-    background-attachment: fixed;
-    /* background-size: 100% 300px; */
+    /* background-attachment: fixed; */
+    background-size: contain;
     
     color: white;
 }
