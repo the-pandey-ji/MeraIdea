@@ -1,122 +1,52 @@
-* {
-    box-sizing: border-box;
-}
-
-/* Style the body */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-
-/* Header/logo Title */
-.header1 {
-    height: 30vh;
-    /* width: 40%; */
-    padding: 80px;
-    text-align: center;
-    background-image: url(img/laptop_keyboard_glow_170138_1280x720.jpg);
-    background-color: aqua;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position-y: -300px;
-
-    color: white;
-}
-
-
-  
-
-/* Increase the font size of the heading */
-.header1 h1 {
-    font-size: 40px;
-}
-
-/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
-.navbar1 {
-    overflow: hidden;
-    background-color: #333;
-    position: sticky;
-    z-index: 99;
-    position: -webkit-sticky;
-    top: 0;
-}
-
-
-/* Style the navigation bar links */
-.navbar1 a {
+ /* Three columns side by side */
+ .column {
     float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-
-/* Right-aligned link */
-.navbar1 a.right {
-    float: right;
-}
-
-/* Change color on hover */
-.navbar1 a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* Active/current link */
-.navbar1 a.active {
-    background-color: #666;
-    color: white;
-}
-
-/* Parallax */
-.bgimg-1 {
-    background-image: url("img/car_sports_car_neon_157154_1920x1080.jpg");
-    min-height: 100vh;
-
-    position: relative;
-    opacity: 0.65;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.caption {
-    opacity: 1;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
   }
   
-  .caption span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
-  }
-
-
-/* Footer */
-.footer1 {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-   
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-    .navbar1 a {
-        float: none;
-        width: 100%;
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
     }
-}
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  } 
