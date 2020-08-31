@@ -16,9 +16,10 @@ body {
     text-align: center;
     background-image: url(img/laptop_keyboard_glow_170138_1280x720.jpg);
     background-color: aqua;
-    /* background-attachment: fixed; */
-    background-size: contain;
-    
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: -300px;
+
     color: white;
 }
 
