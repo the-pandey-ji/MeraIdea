@@ -12,9 +12,10 @@ body {
 .header1 {
     padding: 80px;
     text-align: center;
-    background-image: url();
+    background-image: url(img/);
     background-color: aqua;
     background-attachment: fixed;
+    /* background-size: 100% 300px; */
     
     color: white;
 }
