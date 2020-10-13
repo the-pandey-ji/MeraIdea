@@ -68,11 +68,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  opacity: 1;
+  opacity: .8;
   width: 100%;
-  background-color: black;
+  /* background-color: black; */
   min-height: 100vh;
-  position: relative;
+  position: relative; 
+   
 }
 .h{
     opacity: 1;
@@ -81,17 +82,26 @@
     top: 40%;
     width: 100%;
     text-align: center;
+ 
 }
 .heading{
-  text-shadow: 0 0 0.1em teal;
-  background-color:#FFFFE0;
+  /* text-shadow: 0 0 0.1em teal; */
+  /* background-color:#FFFFE0; */
   font-size: 60px;
   text-align: center;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   box-shadow: 5px 7px 7px 7px black;
+   background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
 }
+
 .mySlides {display: none}
+
 img {vertical-align: middle;}
+
 /* Slideshow container */
 .slideshow{
     width: 100%;
