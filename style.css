@@ -9,7 +9,7 @@
   /* width: 40%; */
   padding: 80px;
   text-align: center;
-  background-image: url(photos/photography-account-1sSfrozgiFk-unsplash.jpg);
+  background-image: url(img/laptop_keyboard_glow_170138_1280x720.jpg);
   background-color: aqua;
   background-attachment: fixed;
   background-size: cover;
@@ -18,7 +18,12 @@
 }
 
 .header1 h1 {
-  font-size: 40px; 
+  margin-top: 30px;
+  font-weight: bolder;
+  font-size: 60px; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 0 0 0.1em teal;
+  color: black;
 }
 /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
 .navbar1 {
