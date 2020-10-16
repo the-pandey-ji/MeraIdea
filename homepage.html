@@ -1,152 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
 
     <title>MeraIdea</title>
-
-</head>
-<body>
-  <div class="header1">
-    <h1>
-      <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-      MeraIdea</h1>
-</div>
+  </head>
+  <body>
+    <div class="header1">
+      <h1>
+        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+        MeraIdea
+      </h1>
+    </div>
     <div class="navbar1">
-      <a href="#"><i style="margin-left: 4px;" class="fa fa-fw fa-home"></i> Home</a>
-      <a href="#"><i style="margin-right: 4px;"class="fa fa-user-plus" ></i>About Us</a>
-      <a href="#"><i style="margin-right: 4px;"class="fa fa-user-plus" ></i>Categories</a>
-      <a href="#"><i style="margin-left: 4px;"class="fa fa-fw fa-search"></i> Search</a>
-      <a href="#"><i style="margin-left: 4px;"class="fa fa-fw fa-envelope"></i> Contact</a>
+      <a href="#"
+        ><i style="margin-left: 4px" class="fa fa-fw fa-home"></i> Home</a
+      >
+      <a href="#"
+        ><i style="margin-right: 4px" class="fa fa-user-plus"></i>About Us</a
+      >
+      <a href="#"
+        ><i style="margin-right: 4px" class="fa fa-user-plus"></i>Categories</a
+      >
+      <a href="#"
+        ><i style="margin-left: 4px" class="fa fa-fw fa-search"></i> Search</a
+      >
+      <a href="#"
+        ><i style="margin-left: 4px" class="fa fa-fw fa-envelope"></i>
+        Contact</a
+      >
       <!-- <a href="#"><i style="margin-right: 4px;"class="fa fa-user-plus" ></i>Signup</a> -->
-      <a href="#"><i style="margin-right: 4px;"class="fa fa-sign-in" ></i>Login</a>
-  </div>
+      <a href="#"
+        ><i style="margin-right: 4px" class="fa fa-sign-in"></i>Login</a
+      >
+    </div>
     <section id="section-1">
-        <div class="h">
-          
+      <div class="h">
         <span class="heading">YOUR IDEA CAN MAKE MONEY</span>
-        </div>
+      </div>
     </section>
     <div class="slideshow">
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img
+          src="photos/light-bulb-3104355.jpg"
+          style="width: 100%; height: 95vh"
+        />
+        <div class="text">Caption Text</div>
+      </div>
 
-        <div class="mySlides">
-          <div class="numbertext">1 / 4</div>
-          <img src="photos/light-bulb-3104355.jpg" style="width:100%; height: 95vh;">
-          <div class="text">Caption Text</div>
-        </div>
-        
-        <div class="mySlides">
-          <div class="numbertext">2 / 4</div>
-          <img src="photos/architect-5342907.jpg" style="width:100%; height: 95vh; ">
-          <div class="text">Caption Two</div>
-        </div>
-        
-        <div class="mySlides">
-          <div class="numbertext">3 / 4</div>
-          <img src="photos/idea-1876659.jpg" style="width:100%; height: 95vh;">
-          <div class="text">Caption Three</div>
-        </div>
-        <div class="mySlides">
-            <div class="numbertext">4 / 4</div>
-            <img src="photos/business-2987962.jpg" style="width:100%; height: 95vh;">
-            <div class="text">Caption Three</div>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        
-        </div>
-        <br>
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-          <span class="dot" onclick="currentSlide(4)"></span>  
-        </div>
-        <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
-        </script>
-        <div class="categories">
-            <ul class="menu">
-                <li><a href="#"><i style="margin-right: 4px;"class="fa fa-angle-double-up" aria-hidden="true"></i>Artificial Intelligence</a></li>
-                <li><a href="#"><i style="margin-right: 4px;"class="fa fa-angle-double-up" aria-hidden="true"></i>Computer Science</a></li>
-                <li><a href="#"><i style="margin-right: 4px;"class="fa fa-angle-double-up" aria-hidden="true"></i>Mechanical</a></li>
-                <li><a href="#"><i style="margin-right: 4px;"class="fa fa-angle-double-up" aria-hidden="true"></i>Civil</a></li>
-                <li><a href="#"><i style="margin-right: 4px;"class="fa fa-angle-double-up" aria-hidden="true"></i>Electronics&Electrical</a></li>
-                <li><a href="#"><i style="margin-right: 4px;"class="fa fa-angle-double-up" aria-hidden="true"></i>Research</a></li>
-            </ul>
-        </div>
-        <footer>
-        <section class="sec1">
-          <section class="link1">
-              <h1>
-                <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-                Meraidea</h1>
-              <p>Meraidea works flexibly so that user can earn money. we have designed this platform
-                 so that people can share their efficient  and innovative ideas. Meraidea helps others so that they can use others ideas effectively.</p>
-          </section>
-          <section class="link2">
-            <h2>Helpful Links</h2>
-            <ul>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Supports</a></li>
-              <li><a href="#">Terms & Condition</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </section>
-          <section class="link3">
-            <h2>Contact Us</h2>
-            <ul>
-            <li><i class="fa fa-home" style="margin-right: 10px;"></i><span>NH-47 Gla University, Mathura</span></li>
-            <li><i class="fa fa-envelope" style="margin-right: 10px;"></i><span>meraidea@gmail.com</span></li>
-            <li><i class="fa fa-mobile" style="margin-right: 10px;"></i><span>Mobile: </span></li>
-            </ul>
-          </section>
-        </section>
-        <section class="sec2">
-          <ul>
-            <h2>Follow us:
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-google"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          </h2>
-          </ul>
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img
+          src="photos/architect-5342907.jpg"
+          style="width: 100%; height: 95vh"
+        />
+        <div class="text">Caption Two</div>
+      </div>
 
-        </section>
-        <section class="sec3">
-          <p>
-            Copyright © 2020 All Rights Reserved by 
-            <a href="https://the-pandey-ji.github.io/MeraIdea/homepage.html">MeraIdea</a>
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="photos/idea-1876659.jpg" style="width: 100%; height: 95vh" />
+        <div class="text">Caption Three</div>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img
+          src="photos/business-2987962.jpg"
+          style="width: 100%; height: 95vh"
+        />
+        <div class="text">Caption Three</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+      // $(".menu").hover(function(){
+      //     $(this).addClass("fa fa-angle-double-down");
+      // }, function() {
+      //   $(this).removeClass("fa fa-angle-double-up");
+      // });
+    </script>
+    <div class="categories">
+      <ul class="menu">
+        <li>
+          <a href="#"
+            ><i
+              style="margin-right: 4px"
+              class="fa fa-angle-double-up"
+              aria-hidden="true"
+            ></i
+            >Artificial Intelligence</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              style="margin-right: 4px"
+              class="fa fa-angle-double-up"
+              aria-hidden="true"
+            ></i
+            >Computer Science</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              style="margin-right: 4px"
+              class="fa fa-angle-double-up"
+              aria-hidden="true"
+            ></i
+            >Mechanical</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              style="margin-right: 4px"
+              class="fa fa-angle-double-up"
+              aria-hidden="true"
+            ></i
+            >Civil</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              style="margin-right: 4px"
+              class="fa fa-angle-double-up"
+              aria-hidden="true"
+            ></i
+            >Electronics&Electrical</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              style="margin-right: 4px"
+              class="fa fa-angle-double-up"
+              aria-hidden="true"
+            ></i
+            >Research</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="section-3">
+      <a name="Technologies"></a>
+
+      <div class="box">
+        <img src="photos/brain-2062057_640.jpg" />
+        <h2>About</h2>
+        <p>
+          Our Motto is to exchange the ideas and grow the knowledge. An immense
+          amount of knowledge that would be helpful to many people is currently
+          only available to few-either limited to people's head or only
+          available to selected bunch. We want to link the people who have
+          knowledge to the people who are in need of it, to unite people
+          together with different outlooks and to charter everyone to share
+          their knowledge for the benefit of other people.Our products and
+          services are focused on knowledge sharing. They can earn their ideas too.
         </p>
+      </div>
+      <div class="box">
+        <img src="photos/ux-787980_640.jpg" />
+        <h2>How it Helps others</h2>
+        <p>
+          
+          It cheers up all the scholars and those who really have a good
+          knowledge about something to share their ideas and showing those ideas
+          to others can brace the thinking. <span style="color: gold; font-weight: bold;">MERAIDEA </span>empowers all the sharers
+          and gainers to have a sense of association, togetherness and duty
+          which play essential role in their encouragement and creation. can be
+          used as idea contributing platform ,idea management platform and
+          innovative ideas for starting up something new and for already
+          existing firms. one can earn money if he/she has the tendency to give good ideas
+        
+        </p>
+      </div>
+      <div class="box">
+        <img src="photos/business-idea-3683781_640.jpg" />
+        <h2>Working</h2>
+        <p>
+          Through <span style="color: gold; font-weight: bold;"> MERAIDEA </span>, everyone will be eligible to share his/her ideas.
+          Everyone will be looking for a good idea. Efficient ideas will be
+          starred from all the ideas that have been shared and ideas of each
+          category will be displayed in the descending order of their votes or
+          likes which mean the idea with highest number of likes will be shown
+          at the top and then the idea with the lesser number of likes. If any one wants to pay others idea then they can donate. Through this the person with maximum number 
+          of upvotes can also gain some popularity in that specific category.
+        </p>
+      </div>
+    </div>
+    <footer>
+      <section class="sec1">
+        <section class="link1">
+          <h1>
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+            Meraidea
+          </h1>
+          <p>
+            Meraidea works flexibly so that user can earn money. we have
+            designed this platform so that people can share their efficient and
+            innovative ideas. Meraidea helps others so that they can use others
+            ideas effectively.
+          </p>
         </section>
-        </footer>
-
-</body>
+        <section class="link2">
+          <h2>Helpful Links</h2>
+          <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Supports</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </section>
+        <section class="link3">
+          <h2>Contact Us</h2>
+          <ul>
+            <li>
+              <i class="fa fa-home" style="margin-right: 10px"></i
+              ><span>NH-47 Gla University, Mathura</span>
+            </li>
+            <li>
+              <i class="fa fa-envelope" style="margin-right: 10px"></i
+              ><span>meraidea@gmail.com</span>
+            </li>
+            <li>
+              <i class="fa fa-mobile" style="margin-right: 10px"></i
+              ><span>Mobile: </span>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section class="sec2">
+        <ul>
+          <h2>
+            Follow us:
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-google"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </h2>
+        </ul>
+      </section>
+      <section class="sec3">
+        <p>
+          Copyright © 2020 All Rights Reserved by
+          <a href="https://the-pandey-ji.github.io/MeraIdea/homepage.html"
+            >MeraIdea</a
+          >
+        </p>
+      </section>
+    </footer>
+  </body>
 </html>
