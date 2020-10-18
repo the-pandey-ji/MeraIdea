@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="login.css">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -39,9 +40,47 @@
         Contact</a
       >
       <!-- <a href="#"><i style="margin-right: 4px;"class="fa fa-user-plus" ></i>Signup</a> -->
-      <a href="login.html" class="button" id="button"><i style="margin-right: 4px" class="fa fa-sign-in"></i>Login</a
+      <a href="" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"  class="button" id="button"><i style="margin-right: 4px" class="fa fa-sign-in"></i>Login</a
       >
     </div>
+<!-- 
+
+    **********************************************************
+    login form
+    **********************************************************
+
+     -->
+
+     <div id="id01" class="modal">
+  
+      <form class="modal-content animate" action="" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="photos/img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+<!-- ###################################################################### -->
+
     <section id="section-1">
       <div class="h">
         <span class="heading">YOUR IDEA CAN MAKE MONEY</span>
@@ -341,5 +380,22 @@
         </p>
       </section>
     </footer>
+
+<!-- ************************************************************
+login script
+************************************************************ -->
+
+    <script>
+      //script for login form
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
   </body>
 </html>
