@@ -29,7 +29,7 @@
   overflow: hidden;
   background-color: #333;
   position: sticky;
-  z-index: 99;
+  z-index: 2;
   position: -webkit-sticky;
   top: 0;
 }
@@ -42,6 +42,15 @@
   padding: 14px 20px;
   text-decoration: none;
 }
+.navbar1 button {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
 
 /* Right-aligned link */
 .navbar1 a.right {
