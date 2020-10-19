@@ -386,7 +386,7 @@ hr {
   background-color: grey;
   position: absolute;
   left: 0;
-  width: 100%;
+  width: 260px;
   display: none;
 }
 .submenu li a:hover{
