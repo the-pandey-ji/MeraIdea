@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background-color: black;
+      }
+
+      h1 {
+        color: red;
+        text-shadow: 1.8px 1.8px 5px rgba(0, 0, 0, 0.6);
+        font-size: 300%;
+        margin-top: 20px;
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2px;
+      }
+
+      #templates {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #templates > div {
+        margin: 70px 20px 50px;
+        width: 350px;
+        height: 400px;
+        background-color: white;
+      }
+
+      #login .top {
+        height: 100px;
+        background-image: linear-gradient(to right, #ee275f, #f3ef16);
+      }
+      h2 {
+        line-height: 50px;
+        text-align: center;
+        color: white;
+      }
+      #login .social-links {
+        width: 120px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #login .social-links a {
+        color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: 40px;
+        font-size: 130%;
+      }
+      .mid {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+      }
+      form input {
+        border: 0px;
+        line-height: 50px;
+        width: 100%;
+        border-bottom: 1px solid gray;
+      }
+      #login .mid a {
+        float: right;
+        margin-top: 10px;
+        font-size: 80%;
+        text-decoration: none;
+      }
+      .bottom {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+      }
+      .bottom .btn {
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #111d5e;
+        border-radius: 20px;
+        color: white;
+        text-decoration: none;
+        float: left;
+      }
+      .bottom p {
+        float: right;
+        font-size: 80%;
+        line-height: 40px;
+      }
+      .form-popup {
+        display: none;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        right: 15px;
+        border: 3px solid #f1f1f1;
+        background-color: black;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="popup"></div>
+    <div id="templates">
+      <div id="login">
+        <div class="top">
+          <h2>Log in</h2>
+          <div class="social-links">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+          </div>
+        </div>
+
+        <div class="mid">
+          <form method="GET">
+            <input type="text" placeholder="Your email" />
+            <br /><br />
+            <input type="password" placeholder="Your password" />
+          </form>
+          <a href="#">Forgot password!</a>
+          <br />
+        </div>
+        <div class="bottom">
+          <a class="btn" href="#">Log in</a>
+          <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById("button").addEventListener("click",function(){
+        document.querySelector(".popup").style.display="flex";
+    });
+  </script>
+  </body>
+</html>
