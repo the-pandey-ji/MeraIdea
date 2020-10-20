@@ -428,7 +428,9 @@ color: limegreen;
   color: blue;
 }
 .section-3 {
-  clear: both;
+  justify-content: center;
+  text-align: center;
+
 }
 .section-3 h1 {
   text-align: center;
