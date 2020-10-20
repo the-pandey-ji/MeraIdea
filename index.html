@@ -95,11 +95,14 @@
 
 
      <div id="id02" class="modal">
-      <span onclick="document.getElementById('id02').style.display='none'" style="color: #f1f1f1; position: absolute; right:35px ; top: 25px;font-size: 50px;" title="Close">&times;</span>
-      <form class="modal-content" action="">
+      <form class="modal-content" action="">      
+        <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close">&times;</span>
+        <img src="photos/avatar.png" alt="Avatar" style="width: 10%;" class="avatar">
+      </div>
         <div class="container">
-          <h1>Sign Up</h1>
-          <p>Please fill in this form to create an account.</p>
+          <h1 style="  text-align: center;">Sign Up</h1>
+          <p style="  text-align: center;">Please fill in this form to create an account.</p>
           <hr>
           <label for="email"><b>Email</b></label>
           <input type="text" placeholder="Enter Email" name="email" required>
