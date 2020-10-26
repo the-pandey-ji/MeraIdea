@@ -4,7 +4,7 @@ session_start();
 // check if the user is already logged in
 if(isset($_SESSION['username']))
 {
-    header("location: welcome.php");
+    header("location: welcome.html");
     exit;
 }
 require_once "config.php";
@@ -82,9 +82,9 @@ if(empty($err))
 
 <div id="id01" class="modal">
   
-      <form class="modal-content animate" action="login.php" method="post">
+      <form class="modal-content animate" action="" method="post">
         <div class="imgcontainer">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+          <span onclick="document.getElementById('id01').style.display='block'" class="close" title="Close">&times;</span>
           <img src="photos/avatar.png" alt="Avatar" class="avatar">
         </div>
     
