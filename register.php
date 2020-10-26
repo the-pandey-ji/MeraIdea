@@ -80,13 +80,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="signup.css">
+<link rel="stylesheet" href="login.css">
 
 <body>
 
-<div id="id02" class="modal">
+<div id="id02" class="modal" style="display:block">
       <form class="modal-content" action="" method="POST">      
         <div class="imgcontainer">
-        <span onclick="document.getElementById('id02').style.display='block'" class="close" title="Close">&times;</span>
+        <!-- <span onclick="document.getElementById('id02').style.display='block'" class="close" title="Close">&times;</span> -->
         <img src="photos/avatar.png" alt="Avatar" style="width: 10%;" class="avatar">
       </div>
         <div class="container">
