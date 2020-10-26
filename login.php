@@ -80,11 +80,10 @@ if(empty($err))
 </head>
 <body>
 
-<div id="id01" class="modal">
+<div id="id01" class="modal" style="display: block;">
   
       <form class="modal-content animate" action="" method="post">
         <div class="imgcontainer">
-          <span onclick="document.getElementById('id01').style.display='block'" class="close" title="Close">&times;</span>
           <img src="photos/avatar.png" alt="Avatar" class="avatar">
         </div>
     
@@ -102,7 +101,7 @@ if(empty($err))
         </div>
     
         <div class="container" style="background-color:#f1f1f1">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="button" onclick="document.getElementById('id01').style.display='block'" class="cancelbtn">Cancel</button>
           <span class="psw">Forgot <a href="#">password?</a></span>
         </div>
       </form>
