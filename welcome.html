@@ -1,1 +1,459 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="signup.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+
+    <title>MeraIdea</title>
+  </head>
+  <body>
+    <div class="header1">
+      <h1>
+        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+        MeraIdea
+      </h1>
+    </div>
+    <div class="navbar1">
+      <a href="#"
+        ><i style="margin-left: 4px" class="fa fa-fw fa-home"></i> Home</a
+      >
+      <a href="#About Us"
+        ><i style="margin-right: 4px" class="fa fa-user-plus"></i>About Us</a
+      >
+      <a href="#Categories"
+        ><i style="margin-right: 4px" class="fa fa-user-plus"></i>Categories</a>
+      <a href="#"
+        ><i style="margin-left: 4px" class="fa fa-fw fa-search"></i> Search</a
+      >
+      <a href="#"
+        ><i style="margin-left: 4px" class="fa fa-fw fa-envelope"></i>
+        Contact</a
+      >
+      <!-- <a href="#"><i style="margin-right: 4px;"class="fa fa-user-plus" ></i>Signup</a> -->
+      <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+      
+    </div>
+<!-- 
+
+    **********************************************************
+    login form
+    **********************************************************
+
+     -->
+
+     <div id="id01" class="modal">
+  
+      <form class="modal-content animate" action="login.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+          <img src="photos/avatar.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="username" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+<!-- ###################################################################### -->
+
+
+<!-- 
+
+    **********************************************************
+    signup form
+    **********************************************************
+
+     -->
+
+
+
+     <div id="id02" class="modal">
+      <form class="modal-content" action="register.php" method="POST">      
+        <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close">&times;</span>
+        <img src="photos/avatar.png" alt="Avatar" style="width: 10%;" class="avatar">
+      </div>
+        <div class="container">
+          <h1 style="  text-align: center;">Sign Up</h1>
+          <p style="  text-align: center;">Please fill in this form to create an account.</p>
+          <hr>
+          <label for="username"><b>Username</b></label>
+          <input type="text" placeholder="User Name" name="username" required>
+    
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" required>
+    
+          <label for="confirm_password"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="confirm_password" required>
+          
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+    
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+    
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+
+
+
+<!-- ###################################################################### -->
+    <section id="section-1">
+      <div class="h">
+        <span class="heading">YOUR IDEA CAN MAKE MONEY</span>
+      </div>
+    </section>
+    <div class="slideshow">
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img
+          src="photos/light-bulb-3104355.jpg"
+          style="width: 100%; height: 95vh"
+        />
+        <div class="text">
+          <h1>Lets your idea shine = make your idea work</h1></div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img
+          src="photos/architect-5342907.jpg"
+          style="width: 100%; height: 95vh"
+        />
+        <div class="text">
+          <h1>Share idea because sharing is caring</h1>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="photos/idea-1876659.jpg" style="width: 100%; height: 95vh" />
+        <div class="text">
+          <h1>Business depends upon innovation & newideas</h1></div>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img
+          src="photos/business-2987962.jpg"
+          style="width: 100%; height: 95vh"
+        />
+        <div class="text1">
+          <h1></h1></div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+      // $(".menu").hover(function(){
+      //     $(this).addClass("fa fa-angle-double-down");
+      // }, function() {
+      //   $(this).removeClass("fa fa-angle-double-up");
+      // });
+    </script>
+    <div class="categories">
+      <a name="Categories"></a>
+      <ul class="menu">
+        <li>
+          <a href="#"
+            ><i
+              style="margin-right: 4px"
+              class="fa fa-angle-double-up"
+              aria-hidden="true"
+            ></i
+            >Artificial Intelligence</a>
+            <ul class="submenu">
+              <li><a href="#">Machinelearning</a></li>
+              <li><a href="#">NeuralNetwork</a></li>
+              <li><a href="#">Robotics</a></li>
+              <li><a href="#">ExpertSystems</a></li>
+              <li><a href="#">FuzzyLogic</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              style="margin-right: 4px"
+              class="fa fa-angle-double-up"
+              aria-hidden="true"
+            ></i
+            >Computer Science</a>
+            <ul class="submenu">
+              <li><a href="#">Cloud Computing</a></li>
+              <li><a href="#">Data Analytics</a></li>
+              <li><a href="#">Cyber Security</a></li>
+              <li><a href="#">IOT</a></li>
+              <li><a href="#">WebDevelopement</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              style="margin-right: 4px"
+              class="fa fa-angle-double-up"
+              aria-hidden="true"
+            ></i
+            >Mechanical</a>
+            <ul class="submenu1">
+              <li><a href="#">Biomedical & Engineering Fluid Mechanics</a></li>
+              <li><a href="#">Ground Vehicle Systems</a></li>
+              <li><a href="#">Mechanical Design</a></li>
+              <li><a href="#">System Dynamics and Control</a></li>
+              <li><a href="#">Transportation Systems</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              style="margin-right: 4px"
+              class="fa fa-angle-double-up"
+              aria-hidden="true"
+            ></i
+            >Civil</a>
+            <ul class="submenu">
+            <li><a href="#">StructuralEngineering</a></li>
+            <li><a href="#">GeotechnicalEngineering</a></li>
+            <li><a href="#">EnvironmentalEngineering</a></li>
+            <li><a href="#">TransportationEngineering</a></li>
+            <li><a href="#">EarthquakeEngineering</a></li>
+            <li><a href="#">Materialengineering</a></li>
+            <li><a href="#">Constructionengineering</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              style="margin-right: 4px"
+              class="fa fa-angle-double-up"
+              aria-hidden="true"
+            ></i
+            >Research</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="section-3">
+      <a name="About Us"></a>
+      <div class="box">
+        <img src="photos/brain-2062057_640.jpg" />
+        <h2>About</h2>
+        <p>
+          Our Motto is to exchange the ideas and grow the knowledge. An immense
+          amount of knowledge that would be helpful to many people is currently
+          only available to few-either limited to people's head or only
+          available to selected bunch. We want to link the people who have
+          knowledge to the people who are in need of it, to unite people
+          together with different outlooks and to charter everyone to share
+          their knowledge for the benefit of other people.Our products and
+          services are focused on knowledge sharing. They can earn their ideas
+          too.
+        </p>
+      </div>
+      <div class="box">
+        <img src="photos/ux-787980_640.jpg"/>
+        <h2>How it Helps others</h2>
+        <p>
+          It cheers up all the scholars and those who really have a good
+          knowledge about something to share their ideas and showing those ideas
+          to others can brace the thinking.
+          <span style="color: gold; font-weight: bold">MERAIDEA </span>empowers
+          all the sharers and gainers to have a sense of association,
+          togetherness and duty which play essential role in their encouragement
+          and creation. can be used as idea contributing platform ,idea
+          management platform and innovative ideas for starting up something new
+          and for already existing firms. one can earn money if he/she has the
+          tendency to give good ideas
+        </p>
+      </div>
+      <div class="box">
+        <img src="photos/business-idea-3683781_640.jpg" />
+        <h2>Working</h2>
+        <p>
+          Through
+          <span style="color: gold; font-weight: bold"> MERAIDEA </span>,
+          everyone will be eligible to share his/her ideas. Everyone will be
+          looking for a good idea. Efficient ideas will be starred from all the
+          ideas that have been shared and ideas of each category will be
+          displayed in the descending order of their votes or likes which mean
+          the idea with highest number of likes will be shown at the top and
+          then the idea with the lesser number of likes. If any one wants to pay
+          others idea then they can donate. Through this the person with maximum
+          number of upvotes can also gain some popularity in that specific
+          category.
+        </p>
+      </div>
+    </div>
+    <footer>
+      <section class="sec1">
+        <section class="link1">
+          <h1>
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+            Meraidea
+          </h1>
+          <p>
+            Meraidea works flexibly so that user can earn money. we have
+            designed this platform so that people can share their efficient and
+            innovative ideas. Meraidea helps others so that they can use others
+            ideas effectively.
+          </p>
+        </section>
+        <section class="link2">
+          <h2>Helpful Links</h2>
+          <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Supports</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </section>
+        <section class="link3">
+          <h2>Contact Us</h2>
+          <ul>
+            <li>
+              <i class="fa fa-home" style="margin-right: 10px"></i
+              ><span>NH-47 Gla University, Mathura</span>
+            </li>
+            <li>
+              <i class="fa fa-envelope" style="margin-right: 10px"></i
+              ><span>meraidea@gmail.com</span>
+            </li>
+            <li>
+              <i class="fa fa-mobile" style="margin-right: 10px"></i
+              ><span>Mobile: </span>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section class="sec2">
+        <ul>
+          <h2>
+            Follow us:
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-google"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </h2>
+        </ul>
+      </section>
+      <section class="sec3">
+        <p>
+          Copyright © 2020 All Rights Reserved by
+          <a href="https://the-pandey-ji.github.io/MeraIdea/"
+            >MeraIdea</a
+          >
+        </p>
+      </section>
+    </footer>
+
+<!-- ************************************************************
+login script
+************************************************************ -->
+
+    <script>
+      //script for login form
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+    <!-- ************************************************************
+Signup script
+************************************************************ -->
+<script>
+  // Get the modal
+  var modal2 = document.getElementById('id02');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal2) {
+      modal2.style.display = "none";
+    }
+  }
+  </script>
+
+
+  </body>
+</html>
