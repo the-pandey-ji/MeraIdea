@@ -1,5 +1,6 @@
-<?php
 
+<?php
+//This script will handle login
 session_start();
 
 // check if the user is already logged in
@@ -14,11 +15,10 @@ $username = $password = "";
 $err = "";
 
 // if request method is post
-if ($_SERVER['REQUEST_METHOD'] == "POST")
-{
+if ($_SERVER['REQUEST_METHOD'] == "POST"){
     if(empty(trim($_POST['username'])) || empty(trim($_POST['password'])))
     {
-        $err = "Please enter username and password";
+        $err = "Please enter username + password";
     }
     else{
         $username = trim($_POST['username']);
@@ -26,8 +26,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST")
     }
 
 
-    if(empty($err))
-    {
+if(empty($err))
+{
     $sql = "SELECT id, username, password FROM users WHERE username = ?";
     $stmt = mysqli_prepare($conn, $sql);
     mysqli_stmt_bind_param($stmt, "s", $param_username);
@@ -35,8 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST")
     
     
     // Try to execute this statement
-    if(mysqli_stmt_execute($stmt))
-    {
+    if(mysqli_stmt_execute($stmt)){
         mysqli_stmt_store_result($stmt);
         if(mysqli_stmt_num_rows($stmt) == 1)
                 {
@@ -55,21 +54,18 @@ if ($_SERVER['REQUEST_METHOD'] == "POST")
                             header("location: welcome.html");
                             
                         }
-                        else{
-                      
-                        header("location : login.php");
-                        }
-
                     }
-                    
+
                 }
 
     }
 }    
+
+
 }
 
-?>
 
+?>
 
 
 
