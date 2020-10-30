@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
           <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
     
           <div class="clearfix">
-            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="button" onclick="window.location.href='index.html'" class="cancelbtn">Cancel</button>
             <button type="submit" class="signupbtn">Sign Up</button>
           </div>
         </div>
