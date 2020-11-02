@@ -136,9 +136,32 @@
 <!-- ###################################################################### -->
     <section id="section-1">
       <div class="h">
-        <span class="heading">YOUR IDEA CAN MAKE MONEY</span>
+        <span id="slogan" class="heading">YOUR IDEA CAN MAKE MONEY</span>
       </div>
     </section>
+    <script>
+    var count = 1;
+      setInterval(() => {
+        
+         if (count==4 ) {
+            document.getElementById("slogan").textContent="YOU CAN CHANGE THE WORLD number 4";
+         }
+         else if (count==3) {
+            document.getElementById("slogan").textContent="YOU CAN CHANGE THE WORLD number 3";
+         }
+         else if (count==2) {
+            document.getElementById("slogan").textContent="YOU CAN CHANGE THE WORLD number 2";
+         }
+        
+         else if (count==1) {
+          document.getElementById("slogan").textContent="YOUR IDEA CAN MAKE MONEY";
+         } 
+       count++;
+       if(count==5)
+       count=0;
+      }, 3000);
+    
+    </script>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere harum voluptate cumque mollitia delectus repellat, temporibus hic neque ullam perferendis vel perspiciatis vitae odit eaque architecto fugit animi, ratione ducimus ipsum deserunt. Molestias itaque delectus, beatae esse aspernatur sapiente dolores sunt modi doloremque quae ratione, odit eligendi nihil dolorum consectetur dignissimos cumque id libero eos iste corrupti? Aut, quaerat! Eius non hic laboriosam eos nisi quae, necessitatibus natus dolor eveniet doloribus sunt magni! Exercitationem ab ipsa nulla soluta blanditiis ea nam minima ad quae, consequuntur corrupti dicta sit optio quas modi provident beatae totam dolorem ex minus repudiandae fugiat? Ea?
 
   
