@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <body>
 
 <div id="id02" class="modal" style="display:block">
-      <form class="modal-content" action="" method="POST">      
+      <form class="modal-content" action="" method="POST" style="width: 40%;">      
         <div class="imgcontainer">
         <!-- <span onclick="document.getElementById('id02').style.display='block'" class="close" title="Close">&times;</span> -->
         <img src="photos/avatar.png" alt="Avatar" style="width: 10%;" class="avatar">
@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
           <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
     
           <div class="clearfix">
-            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="button" onclick="window.location.href='index.html'" class="cancelbtn">Cancel</button>
             <button type="submit" class="signupbtn">Sign Up</button>
           </div>
         </div>

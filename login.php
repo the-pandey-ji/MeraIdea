@@ -98,8 +98,8 @@ if(empty($err))
                 </div>
   
                 <div class="container" style="background-color:#f1f1f1">
-                    <button type="button" onclick="document.getElementById('id01').style.display='block'" class="cancelbtn">Cancel</button>
-                    <span class="psw">Forgot <a href="#">password?</a></span>
+                    <button type="button" onclick="window.location.href='index.html'" class="cancelbtn">Cancel</button>
+                    <button type="button" onclick="window.location.href='register.php'" style="float: right;" class="cancelbtn">SignUp</button>
                 </div>
             </form>
         </div>
