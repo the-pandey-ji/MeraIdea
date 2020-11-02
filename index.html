@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script
       type="text/javascript"
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
@@ -33,6 +34,7 @@
       >
       <a href="#Categories"
         ><i style="margin-right: 4px" class="fa fa-user-plus"></i>Categories</a>
+  
       <a href="#"
         ><i style="margin-left: 4px" class="fa fa-fw fa-search"></i> Search</a
       >
@@ -134,9 +136,32 @@
 <!-- ###################################################################### -->
     <section id="section-1">
       <div class="h">
-        <span class="heading">YOUR IDEA CAN MAKE MONEY</span>
+        <span id="slogan" class="heading">YOUR IDEA CAN MAKE MONEY</span>
       </div>
     </section>
+    <script>
+    var count = 1;
+      setInterval(() => {
+        
+         if (count==4 ) {
+            document.getElementById("slogan").textContent="YOU CAN CHANGE THE WORLD number 4";
+         }
+         else if (count==3) {
+            document.getElementById("slogan").textContent="YOU CAN CHANGE THE WORLD number 3";
+         }
+         else if (count==2) {
+            document.getElementById("slogan").textContent="YOU CAN CHANGE THE WORLD number 2";
+         }
+        
+         else if (count==1) {
+          document.getElementById("slogan").textContent="YOUR IDEA CAN MAKE MONEY";
+         } 
+       count++;
+       if(count==5)
+       count=0;
+      }, 3000);
+    
+    </script>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere harum voluptate cumque mollitia delectus repellat, temporibus hic neque ullam perferendis vel perspiciatis vitae odit eaque architecto fugit animi, ratione ducimus ipsum deserunt. Molestias itaque delectus, beatae esse aspernatur sapiente dolores sunt modi doloremque quae ratione, odit eligendi nihil dolorum consectetur dignissimos cumque id libero eos iste corrupti? Aut, quaerat! Eius non hic laboriosam eos nisi quae, necessitatibus natus dolor eveniet doloribus sunt magni! Exercitationem ab ipsa nulla soluta blanditiis ea nam minima ad quae, consequuntur corrupti dicta sit optio quas modi provident beatae totam dolorem ex minus repudiandae fugiat? Ea?
 
   
