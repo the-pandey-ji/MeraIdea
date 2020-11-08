@@ -48,11 +48,34 @@
 
 
 <!-- ###################################################################### -->
-    <section id="section-1">
-      <div class="h">
-        <span class="heading">YOUR IDEA CAN MAKE MONEY</span>
-      </div>
-    </section>
+<section id="section-1">
+  <div class="h">
+    <span id="slogan" class="heading">YOUR IDEA CAN MAKE MONEY</span>
+  </div>
+</section>
+<script>
+var count = 1;
+  setInterval(() => {
+    
+     if (count==4 ) {
+        document.getElementById("slogan").textContent="YOU CAN CHANGE THE WORLD number 4";
+     }
+     else if (count==3) {
+        document.getElementById("slogan").textContent="YOU CAN CHANGE THE WORLD number 3";
+     }
+     else if (count==2) {
+        document.getElementById("slogan").textContent="YOU CAN CHANGE THE WORLD number 2";
+     }
+    
+     else if (count==1) {
+      document.getElementById("slogan").textContent="YOUR IDEA CAN MAKE MONEY";
+     } 
+   count++;
+   if(count==5)
+   count=0;
+  }, 3000);
+
+</script>
     <div class="slideshow">
       <div class="mySlides">
         <div class="numbertext"></div>
