@@ -10,7 +10,6 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script
       type="text/javascript"
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
@@ -34,7 +33,6 @@
       >
       <a href="#Categories"
         ><i style="margin-right: 4px" class="fa fa-user-plus"></i>Categories</a>
-  
       <a href="#"
         ><i style="margin-left: 4px" class="fa fa-fw fa-search"></i> Search</a
       >
@@ -43,6 +41,7 @@
         Contact</a
       >
       <!-- <a href="#"><i style="margin-right: 4px;"class="fa fa-user-plus" ></i>Signup</a> -->
+      <!-- <span style="position: absolute; right:150px; color: white;"  title="User"><img src="https://img.icons8.com/metro/26/000000/guest-male.png"></span> -->
       <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
       <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
       
@@ -165,7 +164,8 @@
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere harum voluptate cumque mollitia delectus repellat, temporibus hic neque ullam perferendis vel perspiciatis vitae odit eaque architecto fugit animi, ratione ducimus ipsum deserunt. Molestias itaque delectus, beatae esse aspernatur sapiente dolores sunt modi doloremque quae ratione, odit eligendi nihil dolorum consectetur dignissimos cumque id libero eos iste corrupti? Aut, quaerat! Eius non hic laboriosam eos nisi quae, necessitatibus natus dolor eveniet doloribus sunt magni! Exercitationem ab ipsa nulla soluta blanditiis ea nam minima ad quae, consequuntur corrupti dicta sit optio quas modi provident beatae totam dolorem ex minus repudiandae fugiat? Ea?
 
   
-</p>
+
+
 
     <div class="slideshow">
       <div class="mySlides">
@@ -244,7 +244,11 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
       }
-      
+      // $(".menu").hover(function(){
+      //     $(this).addClass("fa fa-angle-double-down");
+      // }, function() {
+      //   $(this).removeClass("fa fa-angle-double-up");
+      // });
     </script>
     <div class="categories">
       <a name="Categories"></a>
@@ -410,11 +414,11 @@
             </li>
             <li>
               <i class="fa fa-envelope" style="margin-right: 10px"></i
-              ><span>meraidea253@gmail.com</span>
+              ><span>meraidea@gmail.com</span>
             </li>
             <li>
               <i class="fa fa-mobile" style="margin-right: 10px"></i
-              ><span>Mobile:+918449192638 </span>
+              ><span>Mobile: </span>
             </li>
           </ul>
         </section>
@@ -424,7 +428,7 @@
           <h2>
             Follow us:
             <li>
-              <a href="https://www.facebook.com/MeraIdea-107935094450654"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
             </li>
             <li>
               <a href="#"><i class="fa fa-twitter"></i></a>
@@ -452,34 +456,33 @@
 login script
 ************************************************************ -->
 
-    <script>
-      //script for login form
-    // Get the modal
-    var modal = document.getElementById('id01');
-    
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-    </script>
+<script>
+  //script for login form
+// Get the modal
+var modal = document.getElementById('id01');
 
-    <!-- ************************************************************
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<!-- ************************************************************
 Signup script
 ************************************************************ -->
 <script>
-  // Get the modal
-  var modal2 = document.getElementById('id02');
-  
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal2) {
-      modal2.style.display = "none";
-    }
-  }
-  </script>
+// Get the modal
+var modal2 = document.getElementById('id02');
 
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal2) {
+  modal2.style.display = "none";
+}
+}
+</script>
 
   </body>
 </html>
