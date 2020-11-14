@@ -1,0 +1,120 @@
+*{
+    padding:0;margin:0;box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:15px;
+}
+li{list-style-type: none;
+}
+i{
+    margin-right: 10px;
+}
+footer{
+    background-color: rgb(21, 21, 29);width: 100%;    
+}
+p,a{
+    color: rgb(88, 88, 88);text-decoration:none;
+}
+h2{
+    text-transform: uppercase;color:grey;margin-bottom:8px;font-size:24px;
+}
+.sec-1{
+    display: flex;flex-direction: row;justify-content: space-between;padding:30px 10px;
+}
+.link3 span,i{
+    color: rgb(83, 83, 83);
+}
+.about{
+    width: 40%;
+}
+.about p{
+    text-align: justify;
+}
+.sec-3{
+    display: flex;justify-content:center;height:100px;align-items: center;
+}
+.sec-3 li{
+    display:inline-block;width: 50px;height:50px;border-radius: 50%;
+    margin-right:20px;
+    background-color: black;
+    
+}
+.sec-3 ul li i{
+    font-size:24px;line-height:47px;text-align: center;color: whitesmoke;padding-left:15px;
+}
+.sec-3 ul li:nth-child(1):hover{
+    background: #3B5998;
+}
+.sec-3 ul li:nth-child(2):hover{
+    background: #55ACEE;
+}
+.sec-3 ul li:nth-child(3):hover{
+    background: #eb4924;
+}
+.sec-3 ul li:nth-child(4):hover{
+    background: #3B5998;
+}
+.sec-3 ul li:nth-child(5):hover{
+    background: #2c4762;
+}
+.sec-4{
+    background-color: rgb(17, 17, 17);display: flex;justify-content: center;
+    padding:30px;
+}
+.sec-4 p{position:relative;}
+.sec-4 p::after{
+    content: '';display: block;width: 0;height: 2px;
+    position: absolute;right: 0;bottom: -10px;background-color: goldenrod;transition: all .3s;
+}
+.sec-4 p:hover::after{
+    width: 100%;
+}
+.sec-1 a:hover,.sec-4 a:hover{color:goldenrod ;}
+
+hr{
+    opacity: 0.2;
+}
+@media(max-width:900px){
+    h2{
+        font-size:15px;
+        margin-bottom: 5px;
+    }
+    *{
+        font-size: 13px;transition: 0.3s;
+    }
+    .sec-1{
+        display: flex;flex-direction: row;justify-content: space-between;padding:30px 8px;
+        flex-wrap: wrap;
+    }
+    .about{
+        width: 100%;
+        margin-bottom:10px ;
+    }
+    
+@media(max-width:480px)
+{
+    *{
+        transition: 0.3s;
+    }
+    .sec-1{
+        display: flex;flex-direction:column;padding:30px 8px;
+        justify-content:center;align-items: center;
+    }
+    .sec-1 ul li{
+        text-align: center;
+    }
+    .sec-1 h2{
+        text-align:center;
+        margin-bottom: 10px;margin-top: 10px;
+    }
+    .sec-3 li{
+        display:inline-block;width: 40px;height:40px;border-radius: 50%;
+        margin-right:10px;
+        background-color: black;
+        
+    }
+    .sec-3 ul li i{
+        font-size:20px;text-align: center;color: whitesmoke;padding-left:12px;
+    }
+
+}
+}
