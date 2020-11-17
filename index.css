@@ -68,7 +68,6 @@
   transition: 0.5s;
 }
 #section-1 {
-  /* margin-top: 80px; */
   background-image: url(photos/dollar-1969930.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -76,7 +75,6 @@
   background-attachment: fixed;
   opacity: 0.8;
   width: 100%;
-  /* background-color: black; */
   min-height: 65vh;
   position: relative;
 }
@@ -367,6 +365,17 @@ hr {
   * {
     transition: 0.3s;
   }
+  .h{
+      opacity: 1;
+      position: absolute;
+      left: 0;
+      top: 40%;
+      width: 100%;
+      text-align: center;
+  }
+  .h .heading{
+    font-size: 20px;
+  }
   .sec1{
     clear: both;
   }
@@ -404,7 +413,7 @@ hr {
   }
   
   .header1 h1{
-    font-size: 30px;
+    font-size: 32px;
   }
   .header{
     width: 100%;
@@ -482,6 +491,9 @@ html {
   } 
 }
  @media (max-width: 625px) {
+.heading{
+  font-size: 35px;
+}
   .section-3 .box {
     margin-left: 20px;
     width: 90%;
@@ -518,7 +530,7 @@ html {
  {
     width: 100vw;
     height: 100vh;
-        margin-bottom: 2vh;
+    margin-bottom: 2vh;
     margin-top: 2vh;
     background-image: url(photos/wall-1475318_1920.jpg);
     background-repeat: no-repeat;
