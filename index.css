@@ -491,8 +491,8 @@ html {
   }           
 }
  @media (max-width: 625px) {
-.heading{
-  font-size: 35px;
+.h .heading{
+  font-size: 30px;
 }
   .section-3 .box {
     margin-left: 20px;
