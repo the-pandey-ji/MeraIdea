@@ -375,7 +375,7 @@ hr {
   }
   .h .heading{
     font-size: 20px;
-  }
+  } 
   .sec1{
     clear: both;
   }
@@ -491,9 +491,6 @@ html {
   }           
 }
  @media (max-width: 625px) {
-.h .heading{
-  font-size: 30px;
-}
   .section-3 .box {
     margin-left: 20px;
     width: 90%;
