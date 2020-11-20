@@ -13,7 +13,7 @@ input[type=text], input[type=password] {
 button {
   background-color: #5a81eb;
   color: white;
-  padding: 14px 20px;
+  padding: 2.24vh 1.15vw;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -117,4 +117,13 @@ span.psw {
   .cancelbtn {
      width: 100%;
   }
+
+}
+@media(max-width: 480px){
+  button{
+    
+    font-size: 1.8;
+    padding: 8px 12px;
+  }
+
 }
