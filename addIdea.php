@@ -1,8 +1,5 @@
 <?php
 session_start();
-
-
-
 require_once "config.php";
 
 $id = $title = $idea = "";
@@ -20,11 +17,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
      $idea = trim($_POST['idea']);
     }
     
-
-    // mysqli_stmt_close($stmt);
-// foreach($_POST as $key=>$value){
-//     echo $key.' '.$value."\n";
-// }
     // Check for title
     if (empty(trim($_POST['title']))) {
         $title_err = "title cannot be blank";
@@ -46,8 +38,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
  
     
     // $result = mysqli_query($db, "SELECT * FROM image"); 
-
-
 
 
 
@@ -94,10 +84,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 <div id="id02" class="modal" style="display:block">
       <form class="modal-content" action="" method="POST" style="width: 50%;" enctype="multipart/form-data">      
-        <!-- <div class="imgcontainer">
-         <span onclick="document.getElementById('id02').style.display='block'" class="close" title="Close">&times;</span> 
-        <img src="photos/avatar.png" alt="Avatar" style="width: 10%;" class="avatar">
-      </div> -->
         <div class="container">
 
 
