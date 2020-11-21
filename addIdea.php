@@ -94,8 +94,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
           <label for="title"><b>Title</b></label>
           <input type="text" placeholder="Title" name="title" required>
     
-          <label for="idea"><b>Idea</b></label>
-          <input type="text" placeholder="Enter text here ..." name="idea" required>
+        <b>Idea</b>
+        <br>
+          <textarea rows="10" cols="50" type="text" placeholder="Enter text here ..." name="idea" required>
+        </textarea>
     <input type="file" name="uploadfile" value=""/>
           <p>This can be a world changing Idea.</p>
     
