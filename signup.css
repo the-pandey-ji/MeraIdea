@@ -45,3 +45,10 @@ hr {
      width: 100%;
   }
 }
+@media(max-width: 480px){
+  button{
+    font-size: 1.8;
+    padding: 8px 12px;
+  }
+
+}

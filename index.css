@@ -37,7 +37,7 @@
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 20px;
+  padding: 2.24vh 1.15vw;
   text-decoration: none;
 }
 .navbar1 button {
@@ -45,11 +45,10 @@
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 20px;
-  margin-right: 30px;
+  padding: 2.24vh 1.15vw;
+  margin-right: 2.15vw;
   text-decoration: none;
 }
-
 /* Right-aligned link */
 .navbar1 a.right {
   float: right;
@@ -60,7 +59,6 @@
   color: black;
   transition: 0.5s;
 }
-
 /* Active/current link */
 .navbar1 a.active {
   background-color: #666;
@@ -365,6 +363,9 @@ hr {
   * {
     transition: 0.3s;
   }
+  .navbar1 a{
+    font-size: 1.5vh;
+     }
   .h{
       opacity: 1;
       position: absolute;
@@ -413,7 +414,7 @@ hr {
   }
   
   .header1 h1{
-    font-size: 32px;
+    font-size: 28px;
   }
   .header{
     width: 100%;
@@ -553,6 +554,20 @@ html {
     margin-right: 4vw;
     margin-top: 6vh;
     float: right;
+  }
+  @media(min-width: 481px) and (max-width: 670px)
+  {
+    .h{
+      opacity: 1;
+      position: absolute;
+      left: 0;
+      top: 40%;
+      width: 100%;
+      text-align: center;
+  }
+  .h .heading{
+    font-size: 30px;
+  } 
   }
  
 
