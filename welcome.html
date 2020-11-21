@@ -20,7 +20,7 @@
   <body>
     <div class="header1">
       <h1>
-        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+        <i style="color: black;" class="fa fa-lightbulb-o" aria-hidden="true"></i>
         MeraIdea
       </h1>
     </div>
@@ -31,51 +31,144 @@
       <a href="#About Us"
         ><i style="margin-right: 4px" class="fa fa-user-plus"></i>About Us</a
       >
-      <a href="#Categories"
-        ><i style="margin-right: 4px" class="fa fa-user-plus"></i>Categories</a>
-      <a href="#"
-        ><i style="margin-left: 4px" class="fa fa-fw fa-search"></i> Search</a
+      <a href="ideas.php"
+        ><i style="margin-left: 4px" class="fa fa-fw fa-mobile"></i> Ideas</a
       >
-      <a href="#"
+      <a href="addIdea.php"
+        ><i style="margin-right: 4px" class="fa fa-plus"></i>Add Idea</a?
+      >
+      <a href="#link3"
         ><i style="margin-left: 4px" class="fa fa-fw fa-envelope"></i>
         Contact</a
       >
       <!-- <a href="#"><i style="margin-right: 4px;"class="fa fa-user-plus" ></i>Signup</a> -->
       <!-- <span style="position: absolute; right:150px; color: white;"  title="User"><img src="https://img.icons8.com/metro/26/000000/guest-male.png"></span> -->
+      
       <button onclick="window.location.href='logout.php';" style="width:auto;">Sign Out</button>
       
     </div>
+<!-- 
+
+    **********************************************************
+    login form
+    **********************************************************
+
+     -->
+
+     <div id="id01" class="modal">
+  
+      <form class="modal-content animate" action="login.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+          <img src="photos/avatar.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="username" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+<!-- ###################################################################### -->
+
+
+<!-- 
+
+    **********************************************************
+    signup form
+    **********************************************************
+
+     -->
+
+
+
+     <div id="id02" class="modal">
+      <form class="modal-content" action="register.php" method="POST" style="width: 40%;">      
+        <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close">&times;</span>
+        <img src="photos/avatar.png" alt="Avatar" style="width: 10%;" class="avatar">
+      </div>
+        <div class="container">
+          <h1 style="  text-align: center;">Sign Up</h1>
+          <p style="  text-align: center;">Please fill in this form to create an account.</p>
+          <hr>
+          <label for="username"><b>Username</b></label>
+          <input type="text" placeholder="User Name" name="username" required>
+    
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" required>
+    
+          <label for="confirm_password"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="confirm_password" required>
+          
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+    
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+    
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+
 
 
 <!-- ###################################################################### -->
-<section id="section-1">
-  <div class="h">
-    <span id="slogan" class="heading">YOUR IDEA CAN MAKE MONEY</span>
-  </div>
-</section>
-<script>
-var count = 1;
-  setInterval(() => {
+    <section id="section-1">
+      <div class="h">
+        <span id="slogan" class="heading">YOUR IDEA CAN MAKE MONEY</span>
+      </div>
+    </section>
+    <script>
+    var count = 1;
+      setInterval(() => {
+        
+         if (count==4 ) {
+            document.getElementById("slogan").textContent="PLATFORM TO SHARE IDEA ";
+         }
+         else if (count==3) {
+            document.getElementById("slogan").textContent="YOU CAN CHANGE THE WORLD ";
+         }
+         else if (count==2) {
+            document.getElementById("slogan").textContent="PLATFORM TO DEVELOP IDEA ";
+         }
+        
+         else if (count==1) {
+          document.getElementById("slogan").textContent="YOUR IDEA CAN MAKE MONEY";
+         } 
+       count++;
+       if(count==5)
+       count=0;
+      }, 3000);
     
-     if (count==4 ) {
-        document.getElementById("slogan").textContent="YOU CAN CHANGE THE WORLD number 4";
-     }
-     else if (count==3) {
-        document.getElementById("slogan").textContent="YOU CAN CHANGE THE WORLD number 3";
-     }
-     else if (count==2) {
-        document.getElementById("slogan").textContent="YOU CAN CHANGE THE WORLD number 2";
-     }
-    
-     else if (count==1) {
-      document.getElementById("slogan").textContent="YOUR IDEA CAN MAKE MONEY";
-     } 
-   count++;
-   if(count==5)
-   count=0;
-  }, 3000);
-
-</script>
+    </script>
+    <div class="video">
+      <h1> <u>How it works </u></h1>
+      <video class="v" controls  muted>
+        <source src="photos/k.mp4" type="video/mp4">
+      </video>
+      <img src="photos/PSX_20201107_130057.jpg" class="image">
+    </div>
     <div class="slideshow">
       <div class="mySlides">
         <div class="numbertext"></div>
@@ -159,86 +252,6 @@ var count = 1;
       //   $(this).removeClass("fa fa-angle-double-up");
       // });
     </script>
-    <div class="categories">
-      <a name="Categories"></a>
-      <ul class="menu">
-        <li>
-          <a href="#"
-            ><i
-              style="margin-right: 4px"
-              class="fa fa-angle-double-up"
-              aria-hidden="true"
-            ></i
-            >Artificial Intelligence</a>
-            <ul class="submenu">
-              <li><a href="#">Machinelearning</a></li>
-              <li><a href="#">NeuralNetwork</a></li>
-              <li><a href="#">Robotics</a></li>
-              <li><a href="#">ExpertSystems</a></li>
-              <li><a href="#">FuzzyLogic</a></li>
-            </ul>
-        </li>
-        <li>
-          <a href="#"
-            ><i
-              style="margin-right: 4px"
-              class="fa fa-angle-double-up"
-              aria-hidden="true"
-            ></i
-            >Computer Science</a>
-            <ul class="submenu">
-              <li><a href="#">Cloud Computing</a></li>
-              <li><a href="#">Data Analytics</a></li>
-              <li><a href="#">Cyber Security</a></li>
-              <li><a href="#">IOT</a></li>
-              <li><a href="#">WebDevelopement</a></li>
-            </ul>
-        </li>
-        <li>
-          <a href="#"
-            ><i
-              style="margin-right: 4px"
-              class="fa fa-angle-double-up"
-              aria-hidden="true"
-            ></i
-            >Mechanical</a>
-            <ul class="submenu1">
-              <li><a href="#">Biomedical & Engineering Fluid Mechanics</a></li>
-              <li><a href="#">Ground Vehicle Systems</a></li>
-              <li><a href="#">Mechanical Design</a></li>
-              <li><a href="#">System Dynamics and Control</a></li>
-              <li><a href="#">Transportation Systems</a></li>
-            </ul>
-        </li>
-        <li>
-          <a href="#"
-            ><i
-              style="margin-right: 4px"
-              class="fa fa-angle-double-up"
-              aria-hidden="true"
-            ></i
-            >Civil</a>
-            <ul class="submenu">
-            <li><a href="#">StructuralEngineering</a></li>
-            <li><a href="#">GeotechnicalEngineering</a></li>
-            <li><a href="#">EnvironmentalEngineering</a></li>
-            <li><a href="#">TransportationEngineering</a></li>
-            <li><a href="#">EarthquakeEngineering</a></li>
-            <li><a href="#">Materialengineering</a></li>
-            <li><a href="#">Constructionengineering</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#"
-            ><i
-              style="margin-right: 4px"
-              class="fa fa-angle-double-up"
-              aria-hidden="true"
-            ></i
-            >Research</a
-          >
-        </li>
-      </ul>
     </div>
     <div class="section-3">
       <a name="About Us"></a>
@@ -254,7 +267,7 @@ var count = 1;
           together with different outlooks and to charter everyone to share
           their knowledge for the benefit of other people.Our products and
           services are focused on knowledge sharing. They can earn their ideas
-          too.
+          too. 
         </p>
       </div>
       <div class="box">
@@ -270,7 +283,7 @@ var count = 1;
           and creation. can be used as idea contributing platform ,idea
           management platform and innovative ideas for starting up something new
           and for already existing firms. one can earn money if he/she has the
-          tendency to give good ideas
+          tendency to give good ideas 
         </p>
       </div>
       <div class="box">
@@ -308,33 +321,33 @@ var count = 1;
         <section class="link2">
           <h2>Helpful Links</h2>
           <ul>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Supports</a></li>
-            <li><a href="#">Terms & Condition</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="services.html">Services & Supports</a></li>
+            <li><a href="terms.html">Terms & Condition</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
           </ul>
         </section>
         <section class="link3">
           <h2>Contact Us</h2>
           <ul>
             <li>
-              <i class="fa fa-home" style="margin-right: 10px"></i
+              <i class="fa fa-home" style="font-size: 20px; margin-right: 10px;"></i
               ><span>NH-47 Gla University, Mathura</span>
             </li>
             <li>
-              <i class="fa fa-envelope" style="margin-right: 10px"></i
-              ><span>meraidea@gmail.com</span>
+              <i class="fa fa-envelope" style="font-size: 20px; margin-right: 10px; "></i
+              ><span>meraidea253@gmail.com</span>
             </li>
             <li>
-              <i class="fa fa-mobile" style="margin-right: 10px"></i
-              ><span>Mobile: </span>
+              <i class="fa fa-mobile" style="font-size: 20px;  margin-right: 10px;"></i
+              ><span>Mobile: +918449192638</span>
             </li>
           </ul>
         </section>
       </section>
       <section class="sec2">
+        <a name="link3"></a>
         <ul>
-          <h2>
+          <h1>
             Follow us:
             <li>
               <a href="#"><i class="fa fa-facebook"></i></a>
@@ -348,7 +361,7 @@ var count = 1;
             <li>
               <a href="#"><i class="fa fa-linkedin"></i></a>
             </li>
-          </h2>
+          </h1>
         </ul>
       </section>
       <section class="sec3">
@@ -361,7 +374,41 @@ var count = 1;
       </section>
     </footer>
 
+<!-- ************************************************************
+login script
+************************************************************ -->
 
+<script>
+  //script for login form
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<!-- ************************************************************
+Signup script
+************************************************************ -->
+<script>
+// Get the modal
+var modal2 = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal2) {
+  modal2.style.display = "none";
+}
+}
+</script>
 
   </body>
 </html>
+
+
+
+      
