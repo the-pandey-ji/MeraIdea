@@ -25,14 +25,18 @@
           height: 100%;
         }
         .H img {
-          width: 50vw;
+          width: 600px;
           margin: 60px 30px 30px 30px;
           float: left;
-          height: 70vh;
+          height: 400px ;
+          object-fit: contain;
+          /* clear: both; */
         }
         .h h1 {
           vertical-align: middle;
+          text-align: justify;
           font-size: 10vh;
+          padding-top: 7vh;
         }
         .h p {
           font-size: 3vh;
@@ -47,6 +51,13 @@
             text-shadow: 0 0 0.1em teal;
             display: inline-block;
             padding-left: 40vw;
+            }
+
+        .contain{
+            display: block;
+            /* border: solid black 5px;  */
+            height: auto;
+            clear: both;
             }
     </style>
 </head>
@@ -76,7 +87,8 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
   // output data of each row
   while($row = mysqli_fetch_assoc($result)) {
- 
+    
+    echo '<div class="contain">';
     echo '<div class="H">';
     echo "<img src='image/".$row['filename']."' >";
     echo '<div class="h">';
@@ -85,8 +97,8 @@ if (mysqli_num_rows($result) > 0) {
 
     echo "</div>";
     echo "</div>";
-
-   echo "<br><br><br><br>";
+    echo "</div>";
+ 
   }
 
 } else {
