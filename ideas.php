@@ -63,7 +63,7 @@
 </head>
 <body>
 <div class="header">
-      <a href="https://the-pandey-ji.github.io/MeraIdea/"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>MeraIdea </a>
+      <a href="http://localhost/meraidea/index.html"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>MeraIdea </a>
     </div>
     <br><br>
 </div> 
